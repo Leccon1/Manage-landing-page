@@ -11,18 +11,28 @@
 		<title>Frontend Mentor | Manage landing page</title>
 	</head>
 	<body>
-		<div class="app" id="app">
-			<nav class="nav">
-				<img src="./src/assets/images/logo.svg" alt="logo" class="nav__logo" />
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Product</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Community</a></li>
-				</ul>
-				<button class="nav__btn">Get Started</button>
-			</nav>
+		<div class="page">
+			<header class="header">
+				<nav class="nav">
+					<img
+						src="./src/assets/images/logo.svg"
+						alt="logo"
+						class="nav__logo"
+					/>
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">About Us</a>
+						</li>
+						<li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Community</a>
+						</li>
+					</ul>
+					<button class="nav__btn">Get Started</button>
+				</nav>
+			</header>
 			<main class="main" id="main">
 				<div class="main__hero">
 					<h1 class="main__title">
@@ -53,7 +63,7 @@
 							<h3 class="manage__subtitle">Track company-wide progress</h3>
 							<p class="manage__description">
 								See how your day-to-day tasks fit into the wider vision. Go from
-								tracking progress at the milestone level all the way done to the
+								tracking progress at the milestone level all the way down to the
 								smallest of details. Never lose sight of the bigger picture
 								again.
 							</p>
@@ -77,56 +87,58 @@
 					</ul>
 				</section>
 				<section class="review">
-					<h2 class="review">What they've said</h2>
-					<div class="review__card">
-						<div class="review__image">
-							<img
-								src="./src/assets/images/avatar-anisha.png"
-								alt="avatar-anisha"
-								class="review__img"
-							/>
+					<h2 class="review__title">What they've said</h2>
+					<div class="review__cards">
+						<div class="review__card">
+							<div class="review__image">
+								<img
+									src="./src/assets/images/avatar-anisha.png"
+									alt="avatar-anisha"
+									class="review__img"
+								/>
+							</div>
+							<div class="review__content">
+								<h3 class="review__name">Anisha Li</h3>
+								<p class="review__text">
+									“Manage has supercharged our team’s workflow. The ability to
+									maintain visibility on larger milestones at all times keeps
+									everyone motivated.”
+								</p>
+							</div>
 						</div>
-						<div class="review__content">
-							<h3 class="review__name">Anisha Li</h3>
-							<p class="review__text">
-								“Manage has supercharged our team’s workflow. The ability to
-								maintain visibility on larger milestones at all times keeps
-								everyone motivated.”
-							</p>
+						<div class="review__card">
+							<div class="review__image">
+								<img
+									src="./src/assets/images/avatar-ali.png"
+									alt="avatar-ali"
+									class="review__img"
+								/>
+							</div>
+							<div class="review__content">
+								<h3 class="review__name">Ali Bravo</h3>
+								<p class="review__text">
+									“We have been able to cancel so many other subscriptions since
+									using Manage. There is no more cross-channel confusion and
+									everyone is much more focused.”
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="review__card">
-						<div class="review__image">
-							<img
-								src="./src/assets/images/avatar-ali.png"
-								alt="avatar-ali"
-								class="review__img"
-							/>
-						</div>
-						<div class="review__content">
-							<h3 class="review__name">Ali Bravo</h3>
-							<p class="review__text">
-								“We have been able to cancel so many other subscriptions since
-								using Manage. There is no more cross-channel confusion and
-								everyone is much more focused.”
-							</p>
-						</div>
-					</div>
-					<div class="review__card">
-						<div class="review__image">
-							<img
-								src="./src/assets/images/avatar-richard.png"
-								alt="avatar-richard"
-								class="review__img"
-							/>
-						</div>
-						<div class="review__content">
-							<h3 class="review__name">Richard Watts</h3>
-							<p class="review__text">
-								“Manage allows us to provide structure and process. It keeps us
-								organized and focused. I can’t stop recommending them to
-								everyone I talk to!”
-							</p>
+						<div class="review__card">
+							<div class="review__image">
+								<img
+									src="./src/assets/images/avatar-richard.png"
+									alt="avatar-richard"
+									class="review__img"
+								/>
+							</div>
+							<div class="review__content">
+								<h3 class="review__name">Richard Watts</h3>
+								<p class="review__text">
+									“Manage allows us to provide structure and process. It keeps
+									us organized and focused. I can’t stop recommending them to
+									everyone I talk to!”
+								</p>
+							</div>
 						</div>
 					</div>
 					<button class="review_btn">Get Started</button>
@@ -143,39 +155,27 @@
 						alt="logo"
 						class="footer__img"
 					/>
-					<ul class="footer__img-link">
-						<li class="footer__item">
-							<a href="#" class="footer__img-item"
-								><img
-									src="./src/assets/images/icon-facebook.svg"
-									alt="facebook"
-							/></a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__img-item"
-								><img src="./src/assets/images/icon-youtube.svg" alt="youtube"
-							/></a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__img-item"
-								><img src="./src/assets/images/icon-twitter.svg" alt="twitter"
-							/></a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__img-item"
-								><img
-									src="./src/assets/images/icon-pinterest.svg"
-									alt="pinterest"
-							/></a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__img-item"
-								><img
-									src="./src/assets/images/icon-instagram.svg"
-									alt="instagram"
-							/></a>
-						</li>
-					</ul>
+					<div class="footer__socials">
+						<a href="#" class="footer__img-item"
+							><img src="./src/assets/images/icon-facebook.svg" alt="facebook"
+						/></a>
+						<a href="#" class="footer__img-item"
+							><img src="./src/assets/images/icon-youtube.svg" alt="youtube"
+						/></a>
+						<a href="#" class="footer__img-item"
+							><img src="./src/assets/images/icon-twitter.svg" alt="twitter"
+						/></a>
+						<a href="#" class="footer__img-item"
+							><img
+								src="./src/assets/images/icon-pinterest.svg"
+								alt="pinterest"
+						/></a>
+						<a href="#" class="footer__img-item"
+							><img
+								src="./src/assets/images/icon-instagram.svg"
+								alt="instagram"
+						/></a>
+					</div>
 				</div>
 				<ul class="footer__link">
 					<li class="footer__item">
